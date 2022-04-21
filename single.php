@@ -34,9 +34,9 @@ if (!function_exists('get_field')) return;
                     </article>
 
                 <?php endwhile; ?>
-                <div id="sidebar">
+                <!-- <div id="sidebar">
                     <?php get_template_part('sidebar'); ?>
-                </div>
+                </div> -->
             </div>
            
 
