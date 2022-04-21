@@ -11,7 +11,7 @@
         "composants-style/_club.scss",
         "composants-style/_cardclub.scss",
         "composants-style/_galerie.scss",
-        "composants-style/_actualites.scss",
+        "composants-style/_blog.scss",
         "composants-style/_cardactu.scss",
         "composants-style/_equipes.scss",
         "composants-style/_blocequipes.scss",
