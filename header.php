@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
-
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +8,7 @@
     <title></title>
   </head>
   <body>
+<<<<<<< HEAD
   <header>
       <?php
       wp_nav_menu(array(
@@ -25,5 +24,10 @@
       <a name="top"></a>
       <div id="page-anim-preloader"></div>
       </header>
+=======
+  <div class="bdp-container">
+    <div class="bdp" id="barre"></div>
+  </div>
+>>>>>>> alan
   </body>
   
