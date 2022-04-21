@@ -6,7 +6,49 @@
 */
 header {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  width: 80%;
+  margin-left: 20%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Anek Tamil', sans-serif;
+  font-size: 16px;
+  color: #007EC6;
+}
+
+header img {
+  height: 97px;
+  width: 136px;
+}
 
 .bdp-container {
   width: 100%;
@@ -14,9 +56,12 @@ header {
   background: white;
   position: fixed;
   z-index: 1000;
-  top: 0px; }
-  .bdp-container .bdp {
-    height: 0.5vh;
-    background: #007EC6;
-    width: 0%; }
+  top: 0px;
+}
+
+.bdp-container .bdp {
+  height: 0.5vh;
+  background: #007EC6;
+  width: 0%;
+}
 /*# sourceMappingURL=style.css.map */
