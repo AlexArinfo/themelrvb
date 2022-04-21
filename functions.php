@@ -5,6 +5,11 @@ register_nav_menus(array(
 ));
 // fin
 
+// afficher image à la une
+add_theme_support( 'post-thumbnails' );
+// fin
+
+
 //supprimer barre admin
 function wpc_show_admin_bar() {
     return false;
@@ -12,9 +17,6 @@ function wpc_show_admin_bar() {
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 //fin
 
-// afficher image à la une
-add_theme_support( 'post-thumbnails' );
-// fin
 
 // Fonction pour afficher le logo dans la nav
 add_theme_support('custom-logo');
