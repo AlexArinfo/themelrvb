@@ -1,0 +1,25 @@
+@mixin heroup{
+    .heroup{
+        position: relative;
+        height: 700px;
+        h2{
+            right: 0;
+            bottom:0;
+            position: absolute;
+            background: rgba(0, 126, 199, 0.6);
+            font-family: 'Anek Tamil';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 80px;
+            color: #EEEEEE; 
+            text-transform: uppercase;
+        }
+        .hero{
+           height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(10);
+        }
+        
+    }
+}

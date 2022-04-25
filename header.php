@@ -9,7 +9,12 @@
 </head>
 
 <body>
-  <header>
+
+<?php 
+get_template_part( './template-parts/progressbar'); 
+?>
+
+<header>
 <?php
 wp_nav_menu(array(
   'menu' => 'Menu principal',
@@ -23,4 +28,5 @@ wp_nav_menu(array(
     </header>
     
     
-    </body
+    
+  

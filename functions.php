@@ -4,6 +4,9 @@ register_nav_menus(array(
     'menu' => 'principal'
 ));
 // fin
+
+// afficher image à la une
+add_theme_support( 'post-thumbnails' );
 // fin
 
 //supprimer barre admin
@@ -13,9 +16,11 @@ function wpc_show_admin_bar() {
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 //fin
 
-// afficher image à la une
-add_theme_support( 'post-thumbnails' );
+// Fonction pour afficher le logo dans la nav
+add_theme_support('custom-logo');
 // fin
+
+
 
 //personnaliser l'administration
 add_action('admin_init', 'admin_color_scheme');
@@ -50,9 +55,13 @@ function monscript() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style( 'anek', "https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400;500;600&display=swap" );
     wp_enqueue_style( 'jost', "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" );
+    wp_enqueue_script('progressbar', get_template_directory_uri() . '/javascript/progressbar.js',array(), '0.1', false );
+   
+
+
 
     }
-    wp_enqueue_script( 'progressbar', get_theme_file_uri( './javascript/progressbar.js' ), array(), null, true );
+
 
         add_action( 'wp_enqueue_scripts', 'monscript' );
 

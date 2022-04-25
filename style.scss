@@ -8,6 +8,7 @@
 @import './composants-style/mixins';
 @import './composants-style/header';
 @import './composants-style/progressbar';
+@import './composants-style/totop';
 @import './composants-style/index';
 @import './composants-style/club';
 @import './composants-style/cardclub';
@@ -27,5 +28,10 @@
 @import './composants-style/contact';
 @import './composants-style/panier';
 @import './composants-style/recentpost';
-@import './composants-style/totop';
+
 @import './composants-style/footer';
+
+body{
+   margin:0px;
+   height: 8000px;
+}

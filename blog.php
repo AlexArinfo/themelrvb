@@ -2,8 +2,9 @@
 //Template Name: Blog
 ?>
 
-<section class="hero" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
-</section>
+<?php 
+get_template_part( './template-parts/heroup'); 
+?>
 
 <main id="blog">
 

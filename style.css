@@ -28,6 +28,66 @@ header {
     height: 97px;
     width: 136px; }
 
+.bdp-container {
+  width: 100%;
+  height: 0.5vh;
+  background: white;
+  position: fixed;
+  z-index: 1000;
+  top: 0px; }
+  .bdp-container .bdp {
+    height: 0.5vh;
+    background: #007EC6;
+    width: 0%; }
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  text-align: center;
+  color: #007EC6;
+  font-size: 18px;
+  border: solid 3px #007EC6;
+  outline: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 10px;
+  width: 70px;
+  height: auto; }
+
+#myBtn img {
+  width: 70%;
+  height: auto; }
+
+#myBtn img:hover {
+  animation: rotate-center 1.5s ease-in-out both; }
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+.heroup {
+  position: relative;
+  height: 700px; }
+  .heroup h2 {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 126, 199, 0.6);
+    font-family: 'Anek Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: #EEEEEE;
+    text-transform: uppercase; }
+  .heroup .hero {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(10); }
+
 #blog .container {
   width: 80%;
   margin: auto; }
@@ -49,4 +109,8 @@ header {
       width: 5px;
       height: 24px;
       background-color: #007EC6; }
+
+body {
+  margin: 0px;
+  height: 8000px; }
 /*# sourceMappingURL=style.css.map */
