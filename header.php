@@ -22,5 +22,5 @@ wp_nav_menu(array(
     <?php endif; ?>
     </header>
     
-    </body>
     
+    </body
