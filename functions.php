@@ -113,4 +113,10 @@ function widget_register_sidebars() {
     }
     add_action( 'widgets_init', 'widget_register_sidebars' );
     
+
     
+    if( function_exists('acf_add_options_page') ) {
+	
+        acf_add_options_page();
+        
+    }

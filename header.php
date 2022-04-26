@@ -13,6 +13,7 @@
 <?php 
 get_template_part( './template-parts/progressbar'); 
 ?>
+<div id="matches"><p><span>Match à venir :</span> <?php the_field( 'match_a_venir', 'option' ); ?></p></div>
 
 <header>
 <?php
