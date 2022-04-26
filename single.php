@@ -27,8 +27,6 @@
 </section>
 
 <main id="single">
-
-
 <div class="container">
 <div id="medcont">
 
@@ -45,7 +43,10 @@
     </article>
     </div>
     <div id="sidecont">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nostrum voluptate possimus deleniti reiciendis perspiciatis doloremque quibusdam in! Quasi, quae error. Accusamus cum explicabo eveniet animi odio sequi similique sunt.
+    <?php 
+get_template_part( './template-parts/recentpost'); 
+?>
+
     </div>
     </div>
     
