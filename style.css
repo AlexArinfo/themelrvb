@@ -141,6 +141,129 @@ header {
       height: 24px;
       background-color: #007EC6; }
 
+.heroupsingle {
+  height: 700px;
+  position: relative; }
+  .heroupsingle .hero {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(10); }
+  .heroupsingle #infosarticle {
+    position: absolute;
+    width: 25%;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; }
+    .heroupsingle #infosarticle .date {
+      width: 12%; }
+      .heroupsingle #infosarticle .date #dm {
+        display: flex;
+        flex-direction: column; }
+        .heroupsingle #infosarticle .date #dm #time {
+          font-family: 'Anek Tamil';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: center;
+          color: #FFFFFF;
+          background-color: #007EC6 !important;
+          padding: 10%; }
+        .heroupsingle #infosarticle .date #dm #month {
+          font-family: 'Anek Tamil';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: center;
+          color: #FFFFFF;
+          background-color: #007EC6 !important;
+          padding: 10%; }
+        .heroupsingle #infosarticle .date #dm #year {
+          background-color: #00171F;
+          font-family: 'Anek Tamil';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 20%; }
+    .heroupsingle #infosarticle #infoarticlebis {
+      display: flex;
+      flex-direction: column; }
+      .heroupsingle #infosarticle #infoarticlebis h1 {
+        margin: 0px; }
+        .heroupsingle #infosarticle #infoarticlebis h1 a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 900;
+          font-size: 48px;
+          line-height: 69px;
+          text-align: center;
+          color: #FFFFFF;
+          text-decoration: none; }
+      .heroupsingle #infosarticle #infoarticlebis .allinfos {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 60%; }
+        .heroupsingle #infosarticle #infoarticlebis .allinfos .aut {
+          font-family: 'Jost';
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 23px;
+          color: white; }
+          .heroupsingle #infosarticle #infoarticlebis .allinfos .aut:before {
+            content: "\f017";
+            font-family: FontAwesome;
+            color: #007EC6;
+            padding-right: 1vw; }
+        .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul {
+          padding-left: 0px;
+          list-style: none; }
+          .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul li a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            text-decoration: none;
+            color: white; }
+            .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul li a:before {
+              content: "\f114";
+              font-family: FontAwesome;
+              color: #007EC6;
+              padding-right: 1vw; }
+
+#single .container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+  #single .container #medcont {
+    width: 70%; }
+    #single .container #medcont article p {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+      color: #00171F; }
+  #single .container #sidecont {
+    width: 25%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    color: #00171F; }
+
 #allarticles {
   display: flex;
   justify-content: space-between;

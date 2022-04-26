@@ -16,7 +16,6 @@
     <div class="allinfos">
     <span class="aut"><?php the_author();?></span>
     <span class="cat"><?php the_category(); ?></span>
-    
     </div>
     </div>
     </article>
