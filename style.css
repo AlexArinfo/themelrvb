@@ -110,7 +110,92 @@ header {
       height: 24px;
       background-color: #007EC6; }
 
+#allarticles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  #allarticles article {
+    background-color: white;
+    width: 21%;
+    margin-bottom: 2%; }
+    #allarticles article .imgarticle img {
+      width: 100%;
+      height: auto; }
+    #allarticles article .textearticle {
+      width: 90%;
+      margin: auto; }
+      #allarticles article .textearticle .date {
+        font-family: 'Jost';
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 23px;
+        color: #686868; }
+        #allarticles article .textearticle .date:before {
+          content: "\f017";
+          font-family: FontAwesome;
+          color: #007EC6; }
+      #allarticles article .textearticle h3 a {
+        font-family: 'Jost';
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #00171F;
+        text-decoration: none; }
+      #allarticles article .textearticle p {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+        color: #00171F; }
+        #allarticles article .textearticle p a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #007EC6;
+          text-decoration: none; }
+      #allarticles article .textearticle hr {
+        border: 1px solid #EFEFEF; }
+      #allarticles article .textearticle .allinfos {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 60%; }
+        #allarticles article .textearticle .allinfos .aut {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 17px;
+          color: #00171F; }
+          #allarticles article .textearticle .allinfos .aut:before {
+            content: "\f2c0";
+            font-family: FontAwesome;
+            color: #007EC6;
+            padding-right: 1vw; }
+        #allarticles article .textearticle .allinfos .cat ul {
+          padding-left: 0px;
+          list-style: none; }
+          #allarticles article .textearticle .allinfos .cat ul li a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            text-decoration: none;
+            color: #00171F; }
+            #allarticles article .textearticle .allinfos .cat ul li a:before {
+              content: "\f114";
+              font-family: FontAwesome;
+              color: #007EC6;
+              padding-right: 1vw; }
+
 body {
   margin: 0px;
-  height: 8000px; }
+  background-color: #FBFBFB; }
 /*# sourceMappingURL=style.css.map */

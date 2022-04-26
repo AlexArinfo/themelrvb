@@ -1,0 +1,113 @@
+#allarticles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    article{
+        background-color: white;
+        width: 21%;
+        margin-bottom: 2%;
+        .imgarticle{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .textearticle{
+            width: 90%;
+            margin: auto;
+            .date{
+                font-family: 'Jost';
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 23px;
+                color: $primtext;
+                
+                &:before{
+                    content: "\f017";
+                    font-family: FontAwesome;
+                    color: $prim;
+                }
+            }
+            h3{
+                a{
+                    font-family: 'Jost';
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: $sectext;
+                    text-decoration: none;
+                }
+            }
+            p{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: justify;
+                color: $sectext;
+                a{
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $prim;  
+                    text-decoration: none;
+                }
+            }
+            hr{
+                border: 1px solid #EFEFEF;
+                
+            }
+            .allinfos{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                width: 60%;
+                .aut{
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 17px;
+                    color: $sectext;
+                    &:before{
+                        content: "\f2c0";
+                        font-family: FontAwesome;
+                        color: $prim;  
+                        padding-right:1vw;
+                    }
+                }
+                
+                .cat{
+                    ul{
+                        padding-left: 0px;
+                        list-style: none;
+                        li{
+                            a{
+                                font-family: 'Jost';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 17px;
+                                text-decoration: none;
+                                color: $sectext;
+                                &:before{
+                                    content: "\f114";
+                                    font-family: FontAwesome;
+                                    color: $prim;  
+                                    padding-right:1vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

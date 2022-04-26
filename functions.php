@@ -53,6 +53,7 @@ function wpdocs_theme_setup() {
 //	ajout style et script
 function monscript() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
+    wp_enqueue_style( 'fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" );
     wp_enqueue_style( 'anek', "https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400;500;600&display=swap" );
     wp_enqueue_style( 'jost', "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" );
     wp_enqueue_script('progressbar', get_template_directory_uri() . '/javascript/progressbar.js',array(), '0.1', false );
