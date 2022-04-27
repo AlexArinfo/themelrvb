@@ -38,26 +38,48 @@ header {
   padding-top: 30px !important;
   width: 80%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: center; }
-  header nav {
-    width: 80%;
-    margin-left: 20%; }
-    header nav ul {
-      display: flex;
-      justify-content: space-between;
-      list-style: none; }
-      header nav ul a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Anek Tamil', sans-serif;
-        font-size: 16px;
-        color: #007EC6; }
-  header img {
-    height: 97px;
-    width: 136px; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  width: 80%;
+  margin-left: 20%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Anek Tamil', sans-serif;
+  font-size: 16px;
+  color: #007EC6;
+}
+
+header img {
+  height: 97px;
+  width: 136px;
+}
 
 .bdp-container {
   width: 100%;
@@ -65,11 +87,14 @@ header {
   background: white;
   position: fixed;
   z-index: 1000;
-  top: 0px; }
-  .bdp-container .bdp {
-    height: 0.5vh;
-    background: #007EC6;
-    width: 0%; }
+  top: 0px;
+}
+
+.bdp-container .bdp {
+  height: 0.5vh;
+  background: #007EC6;
+  width: 0%;
+}
 
 #myBtn {
   position: fixed;
@@ -121,6 +146,7 @@ header {
 
 #blog .container {
   width: 80%;
+<<<<<<< HEAD
   margin: auto; }
   #blog .container h2 {
     font-family: 'Jost';
@@ -354,6 +380,12 @@ header {
 
 #sidecont h2 {
   margin-top: 0;
+=======
+  margin: auto;
+}
+
+#blog .container h2 {
+>>>>>>> alan
   font-family: 'Jost';
   font-style: normal;
   font-weight: 500;
@@ -361,6 +393,7 @@ header {
   font-weight: 600;
   line-height: 35px;
   color: #00171F;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   width: 50%;
@@ -426,4 +459,25 @@ header {
 body {
   margin: 0px;
   background-color: #FBFBFB; }
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#blog .container h2:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 24px;
+  background-color: #007EC6;
+}
+>>>>>>> alan
 /*# sourceMappingURL=style.css.map */
