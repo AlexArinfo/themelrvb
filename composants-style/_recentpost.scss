@@ -1,21 +1,89 @@
-h2{
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 35px;
-    color: #00171F;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    justify-content: space-between;
-    
-    &:before {
-        content: "";
-        display: block;
-        width: 5px;
-        height: 24px;
-        background-color: $prim;
+#sidecont{
+    h2{
+        margin-top: 0;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        color: #00171F;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: space-between;
+        
+        &:before {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 24px;
+            background-color: $prim;
+        }
     }
+article{
+    display: flex;
+    margin-bottom: 2vh;
+    .sideinfos{
+        width: 60%;
+        margin: auto;
+        margin-top: 0px;
+        h3{
+            margin-top: 0;
+            a{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 900 !important;
+                font-size: 18px;
+                line-height: 26px;
+                color: $sectext;
+                text-decoration: none;
+            }
+        }
+        .sideinfosbis{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            width: 70%;
+            .aut{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 17px;
+                color: $sectext;
+                &:before{
+                    content: "\f2c0";
+                    font-family: FontAwesome;
+                    color: $prim;  
+                    padding-right:0.5vw;
+                }
+            }
+            
+            .cat{
+                ul{
+                    padding-left: 0px;
+                    list-style: none;
+                    li{
+                        a{
+                            font-family: 'Jost';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 17px;
+                            text-decoration: none;
+                            color: $sectext;
+                            &:before{
+                                content: "\f114";
+                                font-family: FontAwesome;
+                                color: $prim;  
+                                padding-right:0.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 }
