@@ -2,7 +2,7 @@
     .heroup{
         position: relative;
         height: 700px;
-        h2{
+        h1{
             right: 0;
             bottom:0;
             position: absolute;
@@ -15,11 +15,71 @@
             text-transform: uppercase;
         }
         .hero{
-           height: 100%;
+            height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
             filter: grayscale(10);
         }
         
+    }
+}
+
+@mixin h2{
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #00171F;
+    display: flex;
+    align-items: center;
+    //    ajouter la taille
+    justify-content: space-between;
+    
+    &:before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 24px;
+        background-color: $prim;
+    }
+}
+
+@mixin h3{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #00171F;
+    display: flex;
+    align-items: center;
+}
+
+@mixin p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    color: $primtext;
+}
+
+@mixin button{
+    button{
+        background-color: white;
+        color: $prim;
+        border: 1px solid $prim;
+        border-radius: 15px;
+        padding: 2px 12px;
+        cursor: pointer;
+        &:hover{
+            background-color: $prim;
+            color: white;  
+        }
     }
 }

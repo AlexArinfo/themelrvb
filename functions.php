@@ -112,14 +112,6 @@ function widget_register_sidebars() {
         'after_title' => '</h2>',
         ) );
     }
-<<<<<<< HEAD
     add_action( 'widgets_init', 'widget_register_sidebars' );
     
     
-=======
-    wp_enqueue_script( 'progressbar', get_theme_file_uri( './javascript/progressbar.js' ), array(), null, true );
-
-        add_action( 'wp_enqueue_scripts', 'monscript' );
-
-    wp_enqueue_script( 'slider', get_theme_file_uri( './javascript/slider.js' ), array(), null, true );
->>>>>>> alan

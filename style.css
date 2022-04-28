@@ -38,48 +38,26 @@ header {
   padding-top: 30px !important;
   width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header nav {
-  width: 80%;
-  margin-left: 20%;
-}
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-}
-
-header nav ul a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Anek Tamil', sans-serif;
-  font-size: 16px;
-  color: #007EC6;
-}
-
-header img {
-  height: 97px;
-  width: 136px;
-}
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center; }
+  header nav {
+    width: 80%;
+    margin-left: 20%; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none; }
+      header nav ul a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Anek Tamil', sans-serif;
+        font-size: 16px;
+        color: #007EC6; }
+  header img {
+    height: 97px;
+    width: 136px; }
 
 .bdp-container {
   width: 100%;
@@ -87,14 +65,11 @@ header img {
   background: white;
   position: fixed;
   z-index: 1000;
-  top: 0px;
-}
-
-.bdp-container .bdp {
-  height: 0.5vh;
-  background: #007EC6;
-  width: 0%;
-}
+  top: 0px; }
+  .bdp-container .bdp {
+    height: 0.5vh;
+    background: #007EC6;
+    width: 0%; }
 
 #myBtn {
   position: fixed;
@@ -124,10 +99,192 @@ header img {
   100% {
     transform: rotate(360deg); } }
 
+#club {
+  margin-top: 2%; }
+  #club #adhesion .container {
+    flex-direction: column; }
+    #club #adhesion .container #test {
+      display: flex;
+      width: 100%; }
+      #club #adhesion .container #test #leftadhe {
+        width: 50%; }
+        #club #adhesion .container #test #leftadhe article {
+          width: 60%;
+          margin: auto; }
+          #club #adhesion .container #test #leftadhe article h2 {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 35px;
+            color: #00171F;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%; }
+            #club #adhesion .container #test #leftadhe article h2:before {
+              content: "";
+              display: block;
+              width: 5px;
+              height: 24px;
+              background-color: #007EC6; }
+          #club #adhesion .container #test #leftadhe article #new p {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: justify;
+            color: #686868; }
+          #club #adhesion .container #test #leftadhe article #new a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #007EC6;
+            text-decoration: none; }
+          #club #adhesion .container #test #leftadhe article #old p {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: justify;
+            color: #686868; }
+          #club #adhesion .container #test #leftadhe article #old form button {
+            background-color: white;
+            color: #007EC6;
+            border: 1px solid #007EC6;
+            border-radius: 15px;
+            padding: 2px 12px;
+            cursor: pointer; }
+            #club #adhesion .container #test #leftadhe article #old form button:hover {
+              background-color: #007EC6;
+              color: white; }
+      #club #adhesion .container #test #rightadhe {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+        background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/04/volleycourt-1.png");
+        height: 400px;
+        width: 50%; }
+  #club #crecal {
+    display: flex; }
+    #club #crecal .crenaux {
+      width: 50%; }
+      #club #crecal .crenaux .contcrenaux {
+        width: 60%;
+        margin: auto; }
+        #club #crecal .crenaux .contcrenaux h2 {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 35px;
+          color: #00171F;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 45%; }
+          #club #crecal .crenaux .contcrenaux h2:before {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 24px;
+            background-color: #007EC6; }
+    #club #crecal .calendrier {
+      width: 50%; }
+      #club #crecal .calendrier .contcalendrier {
+        margin: auto;
+        width: 60%; }
+        #club #crecal .calendrier .contcalendrier h2 {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 35px;
+          color: #00171F;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 22%; }
+          #club #crecal .calendrier .contcalendrier h2:before {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 24px;
+            background-color: #007EC6; }
+
+#infospratiques .container {
+  width: 80%;
+  margin: auto; }
+  #infospratiques .container h2 {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #00171F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 16%; }
+    #infospratiques .container h2:before {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 24px;
+      background-color: #007EC6; }
+  #infospratiques .container .cardsinfos {
+    display: flex;
+    justify-content: space-between; }
+    #infospratiques .container .cardsinfos .containercard {
+      width: 20%; }
+      #infospratiques .container .cardsinfos .containercard .card {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #infospratiques .container .cardsinfos .containercard .card img {
+          width: 15%;
+          height: auto; }
+        #infospratiques .container .cardsinfos .containercard .card h3 {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 35px;
+          color: #00171F;
+          display: flex;
+          align-items: center; }
+        #infospratiques .container .cardsinfos .containercard .card p {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: justify;
+          color: #686868; }
+        #infospratiques .container .cardsinfos .containercard .card form button {
+          background-color: white;
+          color: #007EC6;
+          border: 1px solid #007EC6;
+          border-radius: 15px;
+          padding: 2px 12px;
+          cursor: pointer; }
+          #infospratiques .container .cardsinfos .containercard .card form button:hover {
+            background-color: #007EC6;
+            color: white; }
+
 .heroup {
   position: relative;
   height: 700px; }
-  .heroup h2 {
+  .heroup h1 {
     right: 0;
     bottom: 0;
     position: absolute;
@@ -146,7 +303,6 @@ header img {
 
 #blog .container {
   width: 80%;
-<<<<<<< HEAD
   margin: auto; }
   #blog .container h2 {
     font-family: 'Jost';
@@ -380,12 +536,6 @@ header img {
 
 #sidecont h2 {
   margin-top: 0;
-=======
-  margin: auto;
-}
-
-#blog .container h2 {
->>>>>>> alan
   font-family: 'Jost';
   font-style: normal;
   font-weight: 500;
@@ -393,7 +543,6 @@ header img {
   font-weight: 600;
   line-height: 35px;
   color: #00171F;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   width: 50%;
@@ -459,25 +608,4 @@ header img {
 body {
   margin: 0px;
   background-color: #FBFBFB; }
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 10%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#blog .container h2:before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 24px;
-  background-color: #007EC6;
-}
->>>>>>> alan
 /*# sourceMappingURL=style.css.map */

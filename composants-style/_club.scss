@@ -1,0 +1,92 @@
+#club{
+    margin-top: 2%;
+    // section adhesion
+    #adhesion{
+        .container{
+            
+            flex-direction: column;
+            
+            #test{
+                display: flex;
+                width: 100%;
+                #leftadhe{
+                    width: 50%;
+                    article{
+                        width: 60%;
+                        margin: auto;
+                        h2{
+                            @include h2;
+                            width: 50%;
+                        } 
+                        #new{
+                            p{
+                                @include p;
+                                
+                            }
+                            a{
+                                font-family: 'Jost';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: $prim;   
+                                text-decoration: none;
+                                
+                            }
+                        }
+                        #old{
+                            p{
+                                @include p;
+                                
+                            }
+                            form{
+                                @include button;
+                            }
+                        }
+                        
+                    }
+                    
+                }
+                #rightadhe{
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+                    background-image: url('http://localhost:8888/lrvb/wp-content/uploads/2022/04/volleycourt-1.png');
+                    height: 400px;
+                    width: 50%;
+                }
+            }
+            
+        }
+    }
+    // fin section adhésion
+    
+    #crecal{
+        display: flex;
+        .crenaux{
+            width: 50%;
+            .contcrenaux{
+                width: 60%;
+                margin: auto;
+                h2{
+                    @include h2;
+                    width:45%
+                }
+            }
+        }
+        
+        .calendrier{
+            width: 50%;
+            .contcalendrier{
+                margin: auto;
+                width: 60%;
+                h2{
+                    @include h2;
+                    width:22%
+                }
+            }
+            
+        }
+    }
+    
+    
+    
+}
